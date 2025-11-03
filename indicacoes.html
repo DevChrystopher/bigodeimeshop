@@ -15,35 +15,33 @@
         <nav id="menu">
 
             <ul>
-                <abbr title="Página Inicial">
-                    <li class="home"><a href="index.html" target="_blank"><img class="icon" src="icon/logo-rounded.png"
-                                alt="logo"></a></li>
-                </abbr>
+                
+                    <li class="home"><a href="index.html"><img class="icon" src="icon/logo-rounded.png" alt="logo"><p>HOME</p></a></li>
+                
 
-                <abbr title="Loja Oficial">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/loja.png" alt="loja"></a></li>
-                </abbr>
+                
+                    <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/loja.png" alt="loja"><p>LOJA</p></a></li>
+                
+                
+                
+                    <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/detonado.png" alt="detonado"></a><p>DETONADOS</p></li>
+                
 
-                <abbr title="Indicações na Internet">
-                    <li class="navegacao"><a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png"
-                                alt="indicacoes"></a></li>
-                </abbr>
+                
+                    <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/reviews.png" alt="reviews"><p>REVIEWS</p></a></li>
+                
 
-                <abbr title="Detonados">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/detonado.png" alt="detonado"></a></li>
-                </abbr>
+                
+                    <li class="navegacao"><a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png" alt="indicacoes"><p>INDICAÇÕES</p></a></li>
+                
 
-                <abbr title="Reviews">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/reviews.png" alt="reviews"></a></li>
-                </abbr>
+                
+                    <li class="navegacao"><a href="videos.html"><img class="icon" src="icon/youtube.png" alt="youtube"><p>YOUTUBE</p></a></li>
+                
 
-                <abbr title="Youtube">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/youtube.png" alt="youtube"></a></li>
-                </abbr>
-
-                <abbr title="Redes Sociais">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/social.png" alt="social"></a></li>
-                </abbr>
+                
+                    <li class="navegacao"><a href="social.html"><img class="icon" src="icon/social.png" alt="social"><p>SOCIAL</p></a></li>
+                
 
             </ul>
 
@@ -56,15 +54,31 @@
         <div id="principal">
             <section id="carrossel">
 
-                <img class="banner" src="image/banner-teste.png" alt="banner">
+                <img class="banner" src="image/indica-logo.jpg" alt="banner">
 
             </section> <!-- mudar imagem -->
 
-            <h2> CONSOLES </h2>
+            <div id="indice">
 
-            <section id="grade-destaque">
+                <h2 id="console"> CONSOLES </h2>
 
-                <div class="destaque">
+
+                <ul class="lista-indice">
+
+                    <li class="item-indice"><a href="#console">Consoles</a></li>
+                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
+                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
+
+                </ul>
+
+            </div>
+
+
+            
+
+            <section id="grade-afiliado">
+
+                <div class="afiliado">
                     <img src="image/console-ns2.png" alt="Nintendo Switch 2">
                     <div>
                         <h3>NINTENDO SWITCH 2</h3>
@@ -77,7 +91,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt=""> R$4.099,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/nsoled-mario.jpg" alt="nsoled-mario">
                     <div>
                         <h3>NINTENDO SWITCH OLED + MARIO KART</h3>
@@ -88,7 +102,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$2.252,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/nsoled-moded.jpg" alt="nsoled-moded">
 
                     <div>
@@ -100,7 +114,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$2.899,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/nsv2-mario.jpg" alt="nsv2-mario">
                     <div>
                         <h3>NINTEDO SWITCH V2 + MARIO KART</h3>
@@ -113,7 +127,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$1.989,14</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/nslite-blue.jpg" alt="nsv2-mario">
                     <div>
                         <h3>NINTEDO SWITCH LITE AZUL</h3>
@@ -131,12 +145,25 @@
 
             <!-- JOGOS -->
 
-            <h2> JOGOS </h2>
+            <div id="indice">
 
-            <section id="grade-destaque">
+                <h2 id="jogos"> JOGOS </h2>
 
 
-                <div class="destaque">
+                <ul class="lista-indice">
+
+                    <li class="item-indice"><a href="#console">Consoles</a></li>
+                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
+                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
+
+                </ul>
+
+            </div>
+
+            <section id="grade-afiliado">
+
+
+                <div class="afiliado">
                     <img src="image/jogo-legendsza.jpg" alt="legends-za">
                     <div>
                         <h3>POKÉMON LEGENDS Z-A NS1</h3>
@@ -147,7 +174,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$320,79</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/pklzans2.jpg" alt="pklzans2">
                     <div>
                         <h3>POKÉMON LEGENDS Z-A NS2</h3>
@@ -158,7 +185,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$569,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/pklans1.jpg" alt="pklans1">
                     <div>
                         <h3>POKÉMON LEGENDS ARCEUS NS1</h3>
@@ -171,7 +198,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$322,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/zeldabtw.jpg" alt="zeldabtw">
                     <div>
                         <h3>LEGEND OF ZELDA BREATH OF THE WILD NS1</h3>
@@ -184,7 +211,7 @@
                         </div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/zeldabtwNS2.JPG" alt="zeldabtwNS2">
                     <div>
                         <h3>LEGEND OF ZELDA BREATH OF THE WILD NS2</h3>
@@ -196,7 +223,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$549,90</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/zeldatotikns1.jpg" alt="zeldatotikns1">
                     <div>
                         <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS1</h3>
@@ -208,7 +235,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$369,89</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/zeldatotikns2.jpg" alt="zeldatotikns2">
                     <div>
                         <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS2</h3>
@@ -220,7 +247,7 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$451,03</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/zeldaeowns1.jpg" alt="zeldaeowns1">
                     <div>
                         <h3>LEGEND OF ZELDA ECHOES OF WINSDOM NS1</h3>
@@ -236,13 +263,25 @@
 
             <!-- ACESSÓRIOS -->
 
-            <h2> CONSOLES </h2>
+            <div id="indice">
 
-            <section id="grade-destaque">
+                <h2 id="acessorios"> ACESSÓRIOS </h2>
 
-                <div class="destaque">
+
+                <ul class="lista-indice">
+
+                    <li class="item-indice"><a href="#console">Consoles</a></li>
+                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
+                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
+
+                </ul>
+
+            </div>
+            <section id="grade-afiliado">
+
+                <div class="afiliado">
                     <img src="image/console-ns2.png" alt="Nintendo Switch 2">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    
                     <div>
                         <h3>NINTENDO SWITCH 2</h3>
                     </div>
@@ -254,9 +293,9 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt=""> R$4.350,00</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/jogo-legendsza.jpg" alt="legends-za">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    
                     <div>
                         <h3>POKÉMON LEGENDS Z/A</h3>
                     </div>
@@ -266,9 +305,9 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$339,89</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/case-switch.jpg" alt="case-switch">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    
                     <div>
                         <h3>MALA NINTENDO SWITCH</h3>
                     </div>
@@ -278,10 +317,10 @@
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$131,10</a></div>
                 </div>
 
-                <div class="destaque">
+                <div class="afiliado">
                     <img src="image/vegeta-pvc-21cm.jpg" alt="vegeta-pvc">
 
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    
 
                     <div>
                         <h3>VEGETA PVC 21 CM</h3>
@@ -300,7 +339,7 @@
         <footer>
             <p>Site desenvolvido por <a
                     href="https://www.threads.com/@chrystopher.goncalves?xmt=AQF0PZXb_iGltZPSeRSho4oADSL8jQSaH_8vPRgzEQu5uUs"
-                    target="_blank">Chrystopher Gonçalves</a>para a comunidade de <a
+                    target="_blank">Chrystopher Gonçalves</a> para a comunidade de <a
                     href="https://www.youtube.com/@bigodeimes" target="_blank">Bigodeimes</a>!</p>
         </footer>
     </main>

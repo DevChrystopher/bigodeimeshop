@@ -10,38 +10,56 @@
 </head>
 
 <body>
-    <header id="topo">        
+    <header id="topo">
 
         <nav id="menu">
 
             <ul>
-                <abbr title="Página Inicial">
-                    <li class="home"><a href="index.html" target="_blank"><img class="icon" src="icon/logo-rounded.png" alt="logo"></a></li>
-                </abbr>
 
-                <abbr title="Loja Oficial">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/loja.png" alt="loja"></a></li>
-                </abbr>
+                <li class="home"><a href="index.html"><img class="icon" src="icon/logo-rounded.png" alt="logo">
+                        <p>HOME</p>
+                    </a></li>
 
-                <abbr title="Indicações na Internet">
-                    <li class="navegacao"><a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png" alt="indicacoes"></a></li>
-                </abbr>
 
-                <abbr title="Detonados">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/detonado.png" alt="detonado"></a></li>
-                </abbr>
 
-                <abbr title="Reviews">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/reviews.png" alt="reviews"></a></li>
-                </abbr>
+                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/loja.png"
+                            alt="loja">
+                        <p>LOJA</p>
+                    </a></li>
 
-                <abbr title="Youtube">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/youtube.png" alt="youtube"></a></li>
-                </abbr>
 
-                <abbr title="Redes Sociais">
-                    <li class="navegacao"><a href="#"><img class="icon" src="icon/social.png" alt="social"></a></li>
-                </abbr>
+
+                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/detonado.png"
+                            alt="detonado"></a>
+                    <p>DETONADOS</p>
+                </li>
+
+
+
+                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/reviews.png"
+                            alt="reviews">
+                        <p>REVIEWS</p>
+                    </a></li>
+
+
+
+                <li class="navegacao"><a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png"
+                            alt="indicacoes">
+                        <p>INDICAÇÕES</p>
+                    </a></li>
+
+
+
+                <li class="navegacao"><a href="videos.html"><img class="icon" src="icon/youtube.png" alt="youtube">
+                        <p>YOUTUBE</p>
+                    </a></li>
+
+
+
+                <li class="navegacao"><a href="social.html"><img class="icon" src="icon/social.png" alt="social">
+                        <p>SOCIAL</p>
+                    </a></li>
+
 
             </ul>
 
@@ -53,12 +71,14 @@
 
         <div id="principal">
             <section id="carrossel">
-                
-                <img class="banner" src="image/banner-teste.png" alt="banner">
+
+                <img class="banner" src="image/bigodeimeshop-home.jpg" alt="banner">
 
             </section> <!-- imagem carrossel -->
 
-                            <h2>&darr; DESTAQUES &darr;</h2>
+            <div id="indice">
+                <h2> DESTAQUES </h2>
+            </div>
 
 
             <section id="grade-destaque">
@@ -67,7 +87,7 @@
 
                 <div class="destaque">
                     <img src="image/console-ns2.png" alt="Nintendo Switch 2">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    <div class="botao-ver-mais"><a class="ver-mais" href="indicacoes.html#console">Ver Mais</a></div>
                     <div>
                         <h3>NINTENDO SWITCH 2</h3>
                     </div>
@@ -81,12 +101,11 @@
 
                 <div class="destaque">
                     <img src="image/jogo-legendsza.jpg" alt="legends-za">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    <div class="botao-ver-mais"><a class="ver-mais" href="indicacoes.html#jogos">Ver Mais</a></div>
                     <div>
                         <h3>POKÉMON LEGENDS Z/A</h3>
                     </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/6Abhfencq3" target="_blank"
-                            rel="external"><img
+                    <div class="shopee"><a href="https://s.shopee.com.br/6Abhfencq3" target="_blank" rel="external"><img
                                 src="icon/shopee-btn.png" alt="shopee-icon"> R$348,99</a></div>
                     <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2nzgCWR" target="_blank"
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$339,89</a></div>
@@ -94,12 +113,11 @@
 
                 <div class="destaque">
                     <img src="image/case-switch.jpg" alt="case-switch">
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    <div class="botao-ver-mais"><a class="ver-mais" href="indicacoes.html#acessorios">Ver Mais</a></div>
                     <div>
                         <h3>MALA NINTENDO SWITCH</h3>
                     </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/9fArss3l6C" target="_blank"
-                            rel="external"><img
+                    <div class="shopee"><a href="https://s.shopee.com.br/9fArss3l6C" target="_blank" rel="external"><img
                                 src="icon/shopee-btn.png" alt="shopee-icon"> R$129,99</a></div>
                     <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1dAtPLm" target="_blank"
                             rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$131,10</a></div>
@@ -108,14 +126,14 @@
                 <div class="destaque">
                     <img src="image/vegeta-pvc-21cm.jpg" alt="vegeta-pvc">
 
-                    <div class="botao-ver-mais"><a class="ver-mais" href="#">Ver Mais</a></div>
+                    <div class="botao-ver-mais"><a class="ver-mais" href="indicacoes.html#figures">Ver Mais</a></div>
 
                     <div>
+
                         <h3>VEGETA PVC 21 CM</h3>
                     </div>
 
-                    <div class="shopee"><a href="https://s.shopee.com.br/3VaOyp2Zne" target="_blank"
-                            rel="external"><img
+                    <div class="shopee"><a href="https://s.shopee.com.br/3VaOyp2Zne" target="_blank" rel="external"><img
                                 src="icon/shopee-btn.png" alt="shopee-icon"> R$79,90</a></div>
 
                     <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2fwfx8b" target="_blank"
@@ -128,12 +146,18 @@
                 <div class="artigos"></div>
             </section> -->
             <section id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aMywU901DT0?si=icj4jeUVg0iQB6wR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aMywU901DT0?si=icj4jeUVg0iQB6wR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </div>
 
         <footer>
-            <p>Site desenvolvido por <a href="https://www.threads.com/@chrystopher.goncalves?xmt=AQF0PZXb_iGltZPSeRSho4oADSL8jQSaH_8vPRgzEQu5uUs" target="_blank">Chrystopher Gonçalves</a> para a comunidade de <a href="https://www.youtube.com/@bigodeimes" target="_blank">Bigodeimes</a>!</p>
+            <p>Site desenvolvido por <a
+                    href="https://www.threads.com/@chrystopher.goncalves?xmt=AQF0PZXb_iGltZPSeRSho4oADSL8jQSaH_8vPRgzEQu5uUs"
+                    target="_blank">Chrystopher Gonçalves</a> para a comunidade de <a
+                    href="https://www.youtube.com/@bigodeimes" target="_blank">Bigodeimes</a>!</p>
         </footer>
     </main>
 
