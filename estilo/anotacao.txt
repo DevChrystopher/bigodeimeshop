@@ -204,3 +204,338 @@ section#grade-destaques {
         }
     }
 }
+
+
+
+
+
+//////////////////////// segunda tentativa ///////////////////////////////////////////
+
+
+
+
+
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column;
+}
+
+#topo {
+  background-image: linear-gradient(to bottom, rgb(75, 59, 59), white);
+  position: fixed;
+  padding: 10px;
+  width: 100vw;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 2px 5px black;
+  align-content: center;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+img.icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 12vw;
+  aspect-ratio: 1/1;
+  border: 5px solid rgb(75, 59, 59);
+  outline: 5px solid white;
+  box-shadow: 2px 2px 15px black;
+
+  &:hover {
+    border: 5px solid white;
+    outline: 5px solid black;
+  }
+}
+
+#carrossel {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  width: 70vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px black;
+}
+
+h2 {
+  
+  padding: 5px;
+  margin-top: 5%;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px 15px black;
+  width: 60%;
+  color: white;
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom, #a5a398, white);
+  box-shadow: 2px 2px 15px black;
+}
+
+#grade-destaque {
+  gap: 3vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  .destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45vw;
+    height: 100%;
+    position: relative;
+    box-shadow: 2px 2px 15px black;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 2px 2px 15px black;
+    }
+
+    img {
+      padding: 1vw;
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+
+    .botao-ver-mais {
+      display: flex;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+
+    a.ver-mais {
+      padding: 1vw;
+      font-weight: bold;
+      font-size: 4vw;
+      box-shadow: 2px 3px 10px black;
+      text-align: center;
+      align-content: center;
+      color: white;
+      text-decoration: none;
+      background-color: #7bb868;
+      border-radius: 10px;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    h3 {
+      align-content: center;
+      font-size: 100%;
+      padding: 5px;
+      height: 25vw;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .shopee {
+      border: 2px solid rgb(205, 145, 61);
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 2px 3px 7px black;
+
+      img {
+        width: 15%;
+        padding: 0px;
+        margin-right: 15px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        font-weight: bold;
+        color: red;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: rgb(0, 0, 0);
+
+        a {
+          color: rgb(246, 246, 246);
+        }
+      }
+    }
+
+    .mercado-livre {
+      border: 2px solid rgb(53, 121, 239);
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 2px 3px 7px black;
+
+      a {
+        font-weight: bold;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(3, 3, 164);
+        text-decoration: none;
+      }
+
+      img {
+        width: 15%;
+        padding: 0px;
+        margin-right: 15px;
+      }
+
+      &:hover {
+        background-color: rgb(3, 3, 164);
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    max-width: 90vw;
+    border-radius: 20px;
+  }
+}
+
+footer {
+  font-weight: bold;
+  height: 7vh;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+  font-size: 1em;
+  background-image: linear-gradient(to bottom, #a5a398, white);
+  text-shadow: 2px 3px 7px black;
+  margin-top: 100px ;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #topo {
+    max-height: 15vh;
+  }
+
+  img.icon {
+    max-width: 60px;
+  }
+
+  ul {
+    margin-right: 2%;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .home {
+    margin-left: 2%;
+    position: absolute;
+    left: 0;
+  }
+
+   
+  h2 {
+    grid-column: 2 / 3;
+    margin-top: 150px;
+    font-size: 2em;
+    width: 300px;
+  }
+
+  #principal {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+  }
+
+  section#carrossel {
+    display: none;
+  }
+
+   section#grade-destaque {
+    flex-flow: row wrap;
+    grid-column: 2 / 3;
+    margin-top: 10px;
+    
+    
+    div.destaque {     
+      max-width: 200px;
+      height: 360px;
+      
+      a.ver-mais {
+        font-size: 0.8em;
+      }
+
+      h3 {
+        font-size: 1em;
+        height: 3em;
+        margin-bottom: 6px;
+      }
+
+      .shopee {
+          
+        a {
+          font-size: 1em;
+        }
+      }
+
+      .mercado-livre {
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  section#video {
+    grid-column: 3 / 4;
+    
+  }
+
+  footer {
+    font-size: 1em;
+    height: 40px;
+  }
+}
