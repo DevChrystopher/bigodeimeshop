@@ -32,18 +32,16 @@ body {
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;    
+  justify-content: space-around;
   list-style: none;
   text-align: center;
-  
-  a{
+
+  a {
     text-decoration: none;
-    
+
     color: white;
     text-shadow: 2px 2px 5px black;
- }
-
- 
+  }
 }
 
 img.icon {
@@ -57,14 +55,13 @@ img.icon {
 
   &:hover {
     border: 5px solid white;
-    outline: 5px solid black;    
+    outline: 5px solid black;
   }
 }
 
 #carrossel {
+  margin: auto;
   margin-top: 140px;
-  display: flex;
-  justify-content: center;
 }
 
 .banner {
@@ -74,28 +71,29 @@ img.icon {
 }
 
 #indice {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 50px 0px 20px 0px;    
-    grid-column: 2 / 3 ;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 50px 0px 20px 0px;
+  max-width: 95vw;
 
-    .item-indice{
-        margin: 0px 15px;
-        a{
-            color: black;
-            font-weight: bold;
+  .item-indice {
+    margin: 0px 15px;
+    a {
+      color: black;
+      font-weight: bold;
 
-            &:hover{
-                color: yellow;
-            }
-        }
+      &:hover {
+        color: yellow;
+      }
     }
-
-   }
+  }
+}
 
 h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 2.5vw;
   padding: 5px;
   font-size: 1em;
   font-weight: bolder;
@@ -106,8 +104,8 @@ h2 {
   border-radius: 12px;
   background-image: linear-gradient(to bottom, #a5a398, white);
   box-shadow: 2px 2px 15px black;
+  -webkit-text-stroke: .5px black;
   scroll-margin-top: 17vh;
-  
 }
 
 #grade-destaque {
@@ -239,8 +237,6 @@ h2 {
   }
 }
 
-
-
 #grade-afiliado {
   gap: 3vw;
   display: flex;
@@ -370,24 +366,24 @@ h2 {
   }
 }
 
-#grade-video{
-    margin-top: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 15px;
-    a {
-        width: 40vw;
-        img{
-            width: 100%;
-            border-radius: 10px;
+#grade-video {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 15px;
+  a {
+    width: 40vw;
+    img {
+      width: 100%;
+      border-radius: 10px;
 
-            &:hover{
-                transform: translateY(-5px);
-                outline: 3px solid yellow;
-            }
-        }
-    }    
+      &:hover {
+        transform: translateY(-5px);
+        outline: 3px solid yellow;
+      }
+    }
+  }
 }
 
 #video {
@@ -409,7 +405,7 @@ footer {
   font-size: 1em;
   background-image: linear-gradient(to bottom, #a5a398, white);
   text-shadow: 2px 3px 7px black;
-  margin-top: 100px ;
+  margin-top: 100px;
 
   a {
     text-decoration: none;
@@ -422,28 +418,25 @@ footer {
   }
 }
 
-
 #redes {
+  margin-top: 100px;
 
-    margin-top: 100px;
-     
+  ul {
+    justify-content: space-around;
 
-    ul {
-        justify-content: space-around;
+    list-style: none;
 
-        list-style: none;
-        
-        img {
-            width: 80px;
-            border: 3px solid white;
-            border-radius: 50%;
-            box-shadow: 2px 3px 7px black;
+    img {
+      width: 80px;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 2px 3px 7px black;
 
-            &:hover {
-                transform: translateY(-5px);
-            }
-        }
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -467,42 +460,31 @@ footer {
     left: 0;
   }
 
-   
   h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: bolder;
-    grid-column: 2 / 3;
     font-size: 2em;
     width: 200px;
-    -webkit-text-stroke: .5px black;
-  }
-
-  #principal {
-    display: grid;
-    grid-template-columns: auto 1000px auto;
+    -webkit-text-stroke: 0.5px black;
   }
 
   section#carrossel {
-    grid-column: 2 / 3;
     margin: auto;
 
     .banner {
-        width: 300px;
-        margin-top: 130px;
+      width: 300px;
+      margin-top: 130px;
     }
-
   }
 
-   section#grade-destaque {
+  section#grade-destaque {
     flex-flow: row wrap;
-    grid-column: 2 / 3;
     margin-top: 10px;
-    
-    
-    div.destaque {     
+
+    div.destaque {
       max-width: 200px;
       height: 360px;
-      
+
       a.ver-mais {
         font-size: 0.8em;
       }
@@ -514,7 +496,6 @@ footer {
       }
 
       .shopee {
-          
         a {
           font-size: 1em;
         }
@@ -528,16 +509,14 @@ footer {
     }
   }
 
-   section#grade-afiliado {
+  section#grade-afiliado {
     flex-flow: row wrap;
-    grid-column: 2 / 3;
     margin-top: 10px;
-    
-    
-    div.afiliado {     
+
+    div.afiliado {
       max-width: 200px;
       height: 360px;
-      
+
       a.ver-mais {
         font-size: 0.8em;
       }
@@ -549,7 +528,6 @@ footer {
       }
 
       .shopee {
-          
         a {
           font-size: 1em;
         }
@@ -561,11 +539,6 @@ footer {
         }
       }
     }
-  }
-
-  section#video {
-    grid-column: 2 / 3;
-    
   }
 
   footer {
@@ -574,20 +547,14 @@ footer {
   }
 
   #redes {
-
     ul {
-        justify-content: center;
-        
+      justify-content: center;
     }
-}
+  }
 
-#grade-video{
-    
+  #grade-video {
     a {
-        width: 20vw;
-    
-    }    
+      width: 20vw;
+    }
+  }
 }
-}
-
-
