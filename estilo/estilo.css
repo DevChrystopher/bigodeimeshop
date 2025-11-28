@@ -91,6 +91,69 @@ img.icon {
   }
 }
 
+/* FILTRO INICIO */
+
+#conteudo-principal {
+    display: grid;
+    /* Define o layout: 250px para filtros e o restante (1fr) para a grade de produtos */
+    grid-template-columns: 250px 1fr; 
+    gap: 30px; /* Espaço entre a barra lateral e a vitrine */
+    margin-top: 30px;
+    grid-column: 2 / 3; /* Garante que fique na coluna central do grid pai (#principal) */
+}
+
+#painel-filtros {
+    padding: 15px;
+    border-right: 1px solid #ddd; /* Linha divisória suave */
+}
+
+.filtro-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-tags label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.grupo-tags input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.grupo-tags .count {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.grupo-precos button {
+    /* Estilos dos botões de preço, como na sua imagem */
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.grupo-precos button.active-price {
+    /* Exemplo: Fundo azul e texto branco */
+    background-color: #007bff; 
+    color: white;
+    font-weight: bold;
+    border-color: #007bff;
+    /* (Opcional) Adicione uma sombra para destacar mais: */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+/* FILTRO FIM */
+
 h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-left: 2.5vw;
@@ -238,12 +301,9 @@ h2 {
 }
 
 #grade-afiliado {
-  gap: 3vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 
   .afiliado {
     display: flex;
@@ -557,4 +617,57 @@ footer {
       width: 20vw;
     }
   }
+}
+
+/* --- Botão Flutuante do WhatsApp --- */
+.btn-whatsapp-flutuante {
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;     
+    width: 60px;     
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s ease; 
+}
+
+.btn-whatsapp-flutuante img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-whatsapp-flutuante:hover {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 600px) {
+    .btn-whatsapp-flutuante {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* FILTRO QUERY */
+
+    #conteudo-principal {
+        /* Muda para uma única coluna: Filtros e depois Grade de Produtos */
+        grid-template-columns: 1fr; 
+    }
+    #painel-filtros {
+        border-right: none;
+        padding: 10px;
+    }
+    .filtro-box {
+        /* Para mostrar os filtros lado a lado ou em um layout mais compacto no mobile */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
 }

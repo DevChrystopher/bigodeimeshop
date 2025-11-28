@@ -11,64 +11,47 @@
 
 <body>
     <header id="topo">
-
         <nav id="menu">
-
             <ul>
-
-                <li class="home"><a href="index.html"><img class="icon" src="icon/logo-rounded.png" alt="logo">
+                <li class="home">
+                    <a href="index.html"><img class="icon" src="icon/logo-rounded.png" alt="logo">
                         <p>HOME</p>
-                    </a></li>
-
-
-
-                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/loja.png"
-                            alt="loja">
-                        <p>LOJA</p>
-                    </a></li>
-
-
-
-                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/detonado.png"
-                            alt="detonado"></a>
-                    <p>DETONADOS</p>
+                    </a>
                 </li>
-
-
-
-                <li class="navegacao" style="display: none;"><a href="#"><img class="icon" src="icon/reviews.png"
-                            alt="reviews">
+                <li class="navegacao" style="display: none;">
+                    <a href="#"><img class="icon" src="icon/loja.png" alt="loja">
+                        <p>LOJA</p>
+                    </a>
+                </li>
+                <li class="navegacao" style="display: none;">
+                    <a href="#"><img class="icon" src="icon/detonado.png" alt="detonado">
+                        <p>DETONADOS</p>
+                    </a>
+                </li>
+                <li class="navegacao" style="display: none;">
+                    <a href="#"><img class="icon" src="icon/reviews.png" alt="reviews">
                         <p>REVIEWS</p>
-                    </a></li>
-
-
-
-                <li class="navegacao"><a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png"
-                            alt="indicacoes">
+                    </a>
+                </li>
+                <li class="navegacao">
+                    <a href="indicacoes.html"><img class="icon" src="icon/indicacoes.png" alt="indicacoes">
                         <p>INDICAÇÕES</p>
-                    </a></li>
-
-
-
-                <li class="navegacao"><a href="videos.html"><img class="icon" src="icon/youtube.png" alt="youtube">
+                    </a>
+                </li>
+                <li class="navegacao">
+                    <a href="videos.html"><img class="icon" src="icon/youtube.png" alt="youtube">
                         <p>YOUTUBE</p>
-                    </a></li>
-
-
-
-                <li class="navegacao"><a href="social.html"><img class="icon" src="icon/social.png" alt="social">
+                    </a>
+                </li>
+                <li class="navegacao">
+                    <a href="social.html"><img class="icon" src="icon/social.png" alt="social">
                         <p>SOCIAL</p>
-                    </a></li>
-
-
+                    </a>
+                </li>
             </ul>
-
         </nav>
-
     </header>
-
     <main>
-
         <div id="principal">
             <section id="carrossel">
 
@@ -76,770 +59,578 @@
 
             </section> <!-- mudar imagem -->
 
-            <div id="indice">
-
-                <h2 id="console"> CONSOLES </h2>
-
-
-                <ul class="lista-indice">
-
-                    <li class="item-indice"><a href="#console">Consoles</a></li>
-                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
-                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
-
-                </ul>
-
+            <div class="busca-container" style="text-align: center; margin: 20px 0;">
+                <input type="text" id="barra-pesquisa" placeholder="O que você procura? (Ex: Zelda, Mario, Controle...)"
+                    style="padding: 10px; width: 80%; max-width: 500px; border-radius: 20px; border: 1px solid #ccc; font-size: 16px;">
             </div>
 
-
-
-
-            <section id="grade-afiliado">
-
-                <div class="afiliado">
-                    <img src="image/console-ns2.png" alt="Nintendo Switch 2">
-                    <div>
-                        <h3>NINTENDO SWITCH 2</h3>
+            <div id="conteudo-principal">
+                <aside id="painel-filtros">
+                    <h3>FILTROS</h3><br>
+                    <div class="filtro-box">
+                        
+                        <div class="grupo-tags">
+                            <h4>Categoria</h4>
+                            <label><input type="checkbox" data-filtro="console"> Console <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="jogos"> Jogos <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="controle"> Controle <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="acessorios"> Acessórios <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="case"> Case / Bolsa <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="dock"> Docks <span class="count"></span></label>
+                            <label><input type="checkbox" data-filtro="decoracao"> Decoração <span class="count"></span></label>
+                        </div>
                     </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/4AsPkKX7Ia" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon">    R$3.620,00</a></div>
-
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1BuNTYU" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt=""> R$3.738,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/nsoled-mario.jpg" alt="nsoled-mario">
-                    <div>
-                        <h3>NINTENDO SWITCH OLED + MARIO KART</h3>
+                    <div class="filtro-box">
+                        <h4>Faixa de Preço</h4>
+                         <div class="grupo-precos">
+                             <button data-range="0-100">Até R$100</button>
+                             <button data-range="100-300">R$100-300</button>
+                             <button data-range="300-500">R$300-500</button>
+                             <button data-range="500-max">R$500+</button>
+                         </div>
                     </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/8fKp6kpwnF" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$1.959,00</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1VgyHHX" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$1.859,00</a></div>
+                </aside>
+                <div id="|">
+                    <section id="grade-afiliado">
+                        <div class="afiliado" data-categoria='console'>
+                            <img src="image/console-ns2.png" alt="Nintendo Switch 2">
+                            <div>
+                                <h3>NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/4AsPkKX7Ia" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$3.620,00</span></a>
+                            </div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1BuNTYU" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""> <span class="preco-valor">R$3.738,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='console'>
+                            <img src="image/nsoled-mario.jpg" alt="nsoled-mario">
+                            <div>
+                                <h3>NINTENDO SWITCH OLED + MARIO KART</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8fKp6kpwnF" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$1.959,00</span></a>
+                            </div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1VgyHHX" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$1.859,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='console'>
+                            <img src="image/nsoled-moded.jpg" alt="nsoled-moded">
+                            <div>
+                                <h3>NINTENDO SWITCH OLED DESBLOQUEADO</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/qbGkFNWhr" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$1.799,00</span></a>
+                            </div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1K4ob6b" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$2.899,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='console'>
+                            <img src="image/nsv2-mario.jpg" alt="nsv2-mario">
+                            <div>
+                                <h3>NINTENDO SWITCH V2 + MARIO KART</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/7pl21JM4WN" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$1.999,00</span></a>
+                            </div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2Wy91QH" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$1.989,14</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='console'>
+                            <img src="image/nslite-blue.jpg" alt="nsv2-mario">
+                            <div>
+                                <h3>NINTENDO SWITCH LITE AZUL</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8KhJIzrhYc" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$1.360,00</span></a>
+                            </div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2Vgjpih" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$1.341,60</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/jogo-legendsza.jpg" alt="legends-za">
+                            <div>
+                                <h3>POKÉMON LEGENDS Z-A NS1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/6Abhfencq3" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$349,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2nzgCWR" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$320,79</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/pklzans2.jpg" alt="pklzans2">
+                            <div>
+                                <h3>POKÉMON LEGENDS Z-A NS2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/5fgY8bkWki" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$589,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1W2rAgY" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$569,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/pklans1.jpg" alt="pklans1">
+                            <div>
+                                <h3>POKÉMON LEGENDS ARCEUS NS1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/4fo0x6X3H1" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$349,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1n2LZEk" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$322,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/zeldabtw.jpg" alt="zeldabtw">
+                            <div>
+                                <h3>LEGEND OF ZELDA BREATH OF THE WILD NS1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8fK9ipm3tv" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$329,89</span></a></div>
+                            <div class="mercado-livre">
+                                <a href="https://mercadolivre.com/sec/1CJtH2f" target="_blank" rel="external"><img
+                                        src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$359,99</span></a>
+                            </div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/zeldabtwNS2.JPG" alt="zeldabtwNS2">
+                            <div>
+                                <h3>LEGEND OF ZELDA BREATH OF THE WILD NS2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/9pW76yhcXA" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$469,89</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2EjeEMk" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$549,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/zeldatotikns1.jpg" alt="zeldatotikns1">
+                            <div>
+                                <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/7fRce1u8WI" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">ESGOTADO</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2XgeBtH" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$369,89</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/zeldatotikns2.jpg" alt="zeldatotikns2">
+                            <div>
+                                <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/9fCgufiFs9" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$539,89</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2YXbjyq" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$451,03</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='jogos'>
+                            <img src="image/zeldaeowns1.jpg" alt="zeldaeowns1">
+                            <div>
+                                <h3>LEGEND OF ZELDA ECHOES OF WINSDOM NS1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/7V8CRiulrF" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$319,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2pEQHQ4" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$309,28</span></a></div>
+                        </div>
+
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/fonteoriginal.jpg" alt="fonteoriginal">
+                            <div>
+                                <h3>FONTE ORIGINAL NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3qF0UPPIEJ" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"><span class="preco-valor">R$179,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1q2Tvkj" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""> <span class="preco-valor">R$259,31</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='controle'>
+                            <img src="image/procontrollerorigi.jpg" alt="procontrollerorigi">
+                            <div>
+                                <h3>PRO CONTROLLER ORIGINAL NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/qbP2cwjyW" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$389,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2ysxVcA" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$430,73</span></a></div>
+                        </div>
+
+                        <div class="afiliado" data-categoria='controle'>
+                            <img src="image/joyconorigi.jpg" alt="joyconorigi">
+                            <div>
+                                <h3>JOY-CON - PAR ORIGINAL</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/1LXfWRezC7" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$449,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2TW2WDF" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$450,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='controle'>
+                            <img src="image/joyconalterna.jpg" alt="joyconalterna">
+                            <div>
+                                <h3>JOY-CON - PAR ALTERNATIVO</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/40YQgiOetM" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$209,99</span></a></div>
+
+                        </div>
+                        <div class="afiliado" data-categoria='controle'>
+                            <img src="image/procontrolleralterna.jpg" alt="procontrolleralterna">
+                            <div>
+                                <h3>PRO CONTROLLER TURBO ALTERNATIVO</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8pdga78UWr" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$128,85</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2JKBkQK" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$149,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='controle'>
+                            <img src="image/8bitdo.jpg" alt="8bitdo">
+                            <div>
+                                <h3>CONTROLE 8BITDO ULTIMATE 2 BLUETOOTH</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.click.aliexpress.com/e/_c4oAc7u9" target="_blank"
+                                    rel="external"><img src="icon/ali-icon.jpg" alt="shopee-icon"> <span class="preco-valor">R$309,55</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1JSYLXQ" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$374,99</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/maletans1.jpg" alt="maletans1">
+                            <div>
+                                <h3>MALETA NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2VjcuaaXpM" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$120,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/15Lvq9q" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$157,65</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/estojons1.jpg" alt="estojons1">
+                            <div>
+                                <h3>ESTOJO PRO NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2LQCiHbBAL" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$90,40</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/kitestojons1.jpg" alt="kitestojons1">
+                            <div>
+                                <h3>KIT ESTOJO NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2B6mVyboVK" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$86,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2NhSktk" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$125,97</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/casedobrns1.jpg" alt="casedobrns1">
+                            <div>
+                                <h3>CASE DOBE NINTENDO SWITCH OLED</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/6psc5M4JqO" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$38,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/271hWEA" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$39,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/case-ergonomica.jpg" alt="case-ergonomica">
+                            <div>
+                                <h3>CASE NINTENDO SWITCH LITE</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/6fZBt34xBN" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$79,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2FEDWUs" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$71,87</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/case-duxns2.jpg" alt="case-duxns2">
+                            <div>
+                                <h3>CASE DUX NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/7AVSTy33AU" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$109,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1cLjXMN" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$101,10</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/case-pokebolans1.jpg" alt="case-pokebolans1">
+                            <div>
+                                <h3>ESTOJO POKÉBOLA NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/70C2Hf3gVT" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$85,89</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1W4DJiB" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$91,78</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/pelicula-vidrons2.jpg" alt="pelicula-vidrons2">
+                            <div>
+                                <h3>PELÍCULA VIDRO NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3VcA7EH0bo" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$69,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/267G4K4" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$69,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/kit-peliculaoled.jpg" alt="kit-peliculaoled">
+                            <div>
+                                <h3>KIT 2 PELÍCULAS VIDRO NINTENDO SWITCH OLED</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3qF0Waakul" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$48,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2TAqYCY" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$27,63</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/capa-joyconns2.jpg" alt="capa-joyconns2">
+                            <div>
+                                <h3>CAPA JOY-CON NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/40YQita7Zo" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$15,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1BKNXYu" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$26,41</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/strapsalternans1.jpg" alt="strapsalternans1">
+                            <div>
+                                <h3>PAR DE STRAPS NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/4ArqvCZUEr" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$29,99</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2or2X34" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$63,05</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/mousens2.jpg" alt="mousens2">
+                            <div>
+                                <h3>MOUSE ADPTADOR NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/4LBH7VYqtu" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$34,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2gMipiL" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$35,94</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/gripns2.jpg" alt="gripns2">
+                            <div>
+                                <h3>ADAPTADOR GRIP JOYCON NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3VcA9H5Ixh" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$58,40</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1zaTo6b" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$46,57</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/gripns1.jpg" alt="gripns1">
+                            <div>
+                                <h3>ADAPTADOR GRIP JOYCON NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3fvaLa4fck" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$49,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2i5hYhx" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$44,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/griporigns1.jpg" alt="griporigns1">
+                            <div>
+                                <h3>GRIP JOY-CON ORIGINAL NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3qF0Xt42Hn" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$198,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2fmcaoY" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$242,19</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/carrega-multns1.jpg" alt="carrega-multns1">
+                            <div>
+                                <h3>CARREGADOR DE JOY-CON E CONTROLE TIPO C</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/40YQkC3Owq" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$48,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/16vBmMY" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$53,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/gripfun.jpg" alt="gripfun">
+                            <div>
+                                <h3>GRIP PERSONALIZADO NINTENDO SWITCH 2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/Lf8OFoIKL" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$39,92</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1SSabwv" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$40,63</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/gripcolantens1.jpg" alt="gripcolantens1">
+                            <div>
+                                <h3>GRIP VOLANTE NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/BLiBwovfK" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$48,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2RGkGY9" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$48,62</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/bandages1.jpg" alt="bandages1">
+                            <div>
+                                <h3>BANDAGEM JOY-CON NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/12HzdpZ0J" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$63,49</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/26htrfn" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$65,01</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/kit10acessorios.jpg" alt="kit10acessorios">
+                            <div>
+                                <h3>KIT 10 ACESSÓRIOS ESPORTIVOS NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2VjcyEg2vo" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$155,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/121xoqL" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$178,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/kit18acessorios.jpg" alt="kit18acessorios">
+                            <div>
+                                <h3>KIT 18 ACESSÓRIOS ESPORTIVOS NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/70C2LNKhVn" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$328,49</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2JtmonX" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$364,61</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/portajoyconns1.jpg" alt="kit10acessorios">
+                            <div>
+                                <h3>PORTA JOY-CON NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8pdgWkDinA" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$26,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/flipgripns1.jpg" alt="flipgripns1">
+                            <div>
+                                <h3>FLIP GRIP VERTICAL NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/8fKGKREM89" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$68,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/26oGnmT" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$79,78</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='dock'>
+                            <img src="image/carregadock-multns1.jpg" alt="carregadock-multns1">
+                            <div>
+                                <h3>CARREGOR DOCK NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/9AGWvMCS7G" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$63,49</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1xs46TB" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$69,32</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='dock'>
+                            <img src="image/dockmarions1.jpg" alt="dockmarions1">
+                            <div>
+                                <h3>PORTA DOCK DECORATIVA MARIO NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2B6mbFtNkE" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$69,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1A7W99r" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$78,88</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='acessorios'>
+                            <img src="image/suporte-card.jpg" alt="suporte-card">
+                            <div>
+                                <h3>CASE PORTA CARTUCHO NITENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/20nMOwu15D" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$85,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2FionY9" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$121,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='dock'>
+                            <img src="image/multfunc-carrega-portafitas.jpg" alt="multfunc-carrega-portafitas">
+                            <div>
+                                <h3>CARREGADOR E ORGANIZADOR NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/VyYcBzj7w" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$110,49</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1oyCB8F" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$98,60</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/portajogosns.jpg" alt="portajogosns">
+                            <div>
+                                <h3>ORGANIZADOR DE JOGOS NINTENDO SWITCH 1/2</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/3fvaOeXVuF" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$37,99</span></a>
+                            </div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/estojopokedex.jpg" alt="estojopokedex">
+                            <div>
+                                <h3>ESTOJO POKEDEX PARA JOGOS NINTENDO SWITCH</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/20nMPxmANx" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$52,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1mVnJqV" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$63,55</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/portacartuchos.jpg" alt="portacartuchos">
+                            <div>
+                                <h3>MINI CAIXA PARA JOGOS NINTENDO SWITCH</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2Vjd0skGN4" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$22,00</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='dock'>
+                            <img src="image/dockportatilns1.jpg" alt="dockportatilns1">
+                            <div>
+                                <h3>DOCK PORTÁTIL NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/2LQCoZkti3" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$59,00</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1tWv69W" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$77,90</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='dock'>
+                            <img src="image/suporteparedens1.jpg" alt="suporteparedens1">
+                            <div>
+                                <h3>SUPORTE PARA PAREDE NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/BLiEat96e" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$31,92</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1Vb6aTh" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$28,08</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='decoracao'>
+                            <img src="image/portaretrato.jpg" alt="portaretrato">
+                            <div>
+                                <h3>MOLDURA JOGOS SWITCH</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/12I2HtmRd" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$27,99</span></a></div>
+                        </div>
+                        <div class="afiliado" data-categoria='case'>
+                            <img src="image/caixajogosns1.jpg" alt="caixajogosns1">
+                            <div>
+                                <h3>CAIXA VAZIA ACRÍLICA NINTENDO SWITCH 1</h3>
+                            </div>
+                            <div class="shopee"><a href="https://s.shopee.com.br/7pl9QzJELN" target="_blank"
+                                    rel="external"><img src="icon/shopee-btn.png" alt="shopee-icon"> <span class="preco-valor">R$30,90</span></a></div>
+                            <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1LJG6KK" target="_blank"
+                                    rel="external"><img src="icon/mercado-livre-btn.png" alt=""><span class="preco-valor">R$30,70</span></a></div>
+                        </div>
+
+                    </section>
                 </div>
-
-                <div class="afiliado">
-                    <img src="image/nsoled-moded.jpg" alt="nsoled-moded">
-
-                    <div>
-                        <h3>NINTENDO SWITCH OLED DESBLOQUEADO</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/qbGkFNWhr" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$1.799,00</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1K4ob6b" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$2.899,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/nsv2-mario.jpg" alt="nsv2-mario">
-                    <div>
-                        <h3>NINTENDO SWITCH V2 + MARIO KART</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/7pl21JM4WN" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$1.999,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2Wy91QH" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$1.989,14</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/nslite-blue.jpg" alt="nsv2-mario">
-                    <div>
-                        <h3>NINTENDO SWITCH LITE AZUL</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/8KhJIzrhYc" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$1.360,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2Vgjpih" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$1.341,60</a></div>
-                </div>
-
-
-            </section>
-
-            <!-- JOGOS -->
-
-            <div id="indice">
-
-                <h2 id="jogos"> JOGOS </h2>
-
-
-                <ul class="lista-indice">
-
-                    <li class="item-indice"><a href="#console">Consoles</a></li>
-                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
-                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
-
-                </ul>
-
             </div>
-
-            <section id="grade-afiliado">
-
-
-                <div class="afiliado">
-                    <img src="image/jogo-legendsza.jpg" alt="legends-za">
-                    <div>
-                        <h3>POKÉMON LEGENDS Z-A NS1</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/6Abhfencq3" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$349,99</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2nzgCWR" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$320,79</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/pklzans2.jpg" alt="pklzans2">
-                    <div>
-                        <h3>POKÉMON LEGENDS Z-A NS2</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/5fgY8bkWki" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$589,99</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1W2rAgY" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$569,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/pklans1.jpg" alt="pklans1">
-                    <div>
-                        <h3>POKÉMON LEGENDS ARCEUS NS1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/4fo0x6X3H1" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$349,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1n2LZEk" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$322,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/zeldabtw.jpg" alt="zeldabtw">
-                    <div>
-                        <h3>LEGEND OF ZELDA BREATH OF THE WILD NS1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/8fK9ipm3tv" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$329,89</a></div>
-
-                    <div class="mercado-livre">
-                        <a href="https://mercadolivre.com/sec/1CJtH2f" target="_blank" rel="external"><img
-                                src="icon/mercado-livre-btn.png" alt="">R$359,99</a>
-                    </div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/zeldabtwNS2.JPG" alt="zeldabtwNS2">
-                    <div>
-                        <h3>LEGEND OF ZELDA BREATH OF THE WILD NS2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/9pW76yhcXA" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$469,89</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2EjeEMk" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$549,90</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/zeldatotikns1.jpg" alt="zeldatotikns1">
-                    <div>
-                        <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/7fRce1u8WI" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> ESGOTADO</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2XgeBtH" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$369,89</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/zeldatotikns2.jpg" alt="zeldatotikns2">
-                    <div>
-                        <h3>LEGEND OF ZELDA TEARS OF THE KINGDOM NS2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/9fCgufiFs9" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$539,89</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2YXbjyq" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$451,03</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/zeldaeowns1.jpg" alt="zeldaeowns1">
-                    <div>
-                        <h3>LEGEND OF ZELDA ECHOES OF WINSDOM NS1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/7V8CRiulrF" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$319,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2pEQHQ4" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$309,28</a></div>
-                </div>
-            </section>
-
-            <!-- ACESSÓRIOS -->
-
-            <div id="indice">
-
-                <h2 id="acessorios"> ACESSÓRIOS </h2>
-
-
-                <ul class="lista-indice">
-
-                    <li class="item-indice"><a href="#console">Consoles</a></li>
-                    <li class="item-indice"><a href="#jogos">Jogos</a></li>
-                    <li class="item-indice"><a href="#acessorios">Acessórios</a></li>
-
-                </ul>
-
-            </div>
-            <section id="grade-afiliado">
-
-                <div class="afiliado">
-                    <img src="image/fonteoriginal.jpg" alt="fonteoriginal">
-
-                    <div>
-                        <h3>FONTE ORIGINAL NINTENDO SWITCH 1</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/3qF0UPPIEJ" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon">R$179,00</a></div>
-
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1q2Tvkj" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt=""> R$259,31</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/procontrollerorigi.jpg" alt="procontrollerorigi">
-
-                    <div>
-                        <h3>PRO CONTROLLER ORIGINAL NINTENDO SWITCH 1</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/qbP2cwjyW" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$389,00</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2ysxVcA" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$430,73</a></div>
-                </div>
-
-                
-                <div class="afiliado">
-                    <img src="image/joyconorigi.jpg" alt="joyconorigi">
-
-                    <div>
-                        <h3>JOY-CON - PAR ORIGINAL</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/1LXfWRezC7" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$449,90</a></div>
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2TW2WDF" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$450,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/joyconalterna.jpg" alt="joyconalterna">
-
-                    <div>
-                        <h3>JOY-CON - PAR ALTERNATIVO</h3>
-                    </div>
-                    <div class="shopee"><a href="https://s.shopee.com.br/40YQgiOetM" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$209,99</a></div>
-                    
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/procontrolleralterna.jpg" alt="procontrolleralterna">
-
-                    <div>
-                        <h3>PRO CONTROLLER TURBO ALTERNATIVO</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/8pdga78UWr" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$128,85</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2JKBkQK" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$149,90</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/8bitdo.jpg" alt="8bitdo">
-
-                    <div>
-
-                        <h3>CONTROLE 8BITDO ULTIMATE 2 BLUETOOTH</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.click.aliexpress.com/e/_c4oAc7u9" target="_blank" rel="external"><img
-                                src="icon/ali-icon.jpg" alt="shopee-icon"> R$309,55</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1JSYLXQ" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$374,99</a></div>
-                </div>
-
-
-                <div class="afiliado">
-                    <img src="image/maletans1.jpg" alt="maletans1">
-
-                    <div>
-                        <h3>MALETA NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2VjcuaaXpM" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$120,99</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/15Lvq9q" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$157,65</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/estojons1.jpg" alt="estojons1">
-
-
-
-                    <div>
-                        <h3>ESTOJO PRO NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2LQCiHbBAL" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$90,40</a></div>
-
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/kitestojons1.jpg" alt="kitestojons1">
-
-                    <div>
-                        <h3>KIT ESTOJO NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2B6mVyboVK" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$86,99</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2NhSktk" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$125,97</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/casedobrns1.jpg" alt="casedobrns1">
-
-
-
-                    <div>
-                        <h3>CASE DOBE NINTENDO SWITCH OLED</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/6psc5M4JqO" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$38,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/271hWEA" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$39,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/case-ergonomica.jpg" alt="case-ergonomica">
-
-
-
-                    <div>
-                        <h3>CASE NINTENDO SEITCH LITE</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/6fZBt34xBN" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$79,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2FEDWUs" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$71,87</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/case-duxns2.jpg" alt="case-duxns2">
-
-                    <div>
-                        <h3>CASE DUX NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/7AVSTy33AU" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$109,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1cLjXMN" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$101,10</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/case-pokebolans1.jpg" alt="case-pokebolans1">
-
-                    <div>
-                        <h3>ESTOJO POKÉBOLA NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/70C2Hf3gVT" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$85,89</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1W4DJiB" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$91,78</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/pelicula-vidrons2.jpg" alt="pelicula-vidrons2">
-
-                    <div>
-                        <h3>PELÍCULA VIDRO NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3VcA7EH0bo" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$69,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/267G4K4" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$69,90</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/kit-peliculaoled.jpg" alt="kit-peliculaoled">
-
-                    <div>
-                        <h3>KIT 2 PELÍCULAS VIDRO NINTENDO SWITCH OLED</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3qF0Waakul" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$48,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2TAqYCY" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$27,63</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/capa-joyconns2.jpg" alt="capa-joyconns2">
-
-                    <div>
-                        <h3>CAPA JOY-CON NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/40YQita7Zo" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$15,99</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1BKNXYu" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$26,41</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/strapsalternans1.jpg" alt="strapsalternans1">
-
-                    <div>
-                        <h3>PAR DE STRAPS NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/4ArqvCZUEr" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$29,99</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2or2X34" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$63,05</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/mousens2.jpg" alt="mousens2">
-
-                    <div>
-                        <h3>MOUSE ADPTADOR NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/4LBH7VYqtu" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$34,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2gMipiL" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$35,94</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/gripns2.jpg" alt="gripns2">
-
-                    <div>
-                        <h3>ADAPTADOR GRIP JOYCON NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3VcA9H5Ixh" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$58,40</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1zaTo6b" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$46,57</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/gripns1.jpg" alt="gripns1">
-
-                    <div>
-                        <h3>ADAPTADOR GRIP JOYCON NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3fvaLa4fck" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$49,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2i5hYhx" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$44,90</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/griporigns1.jpg" alt="griporigns1">
-
-                    <div>
-                        <h3>GRIP JOY-CON ORIGINAL NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3qF0Xt42Hn" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$198,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2fmcaoY" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$242,19</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/carrega-multns1.jpg" alt="carrega-multns1">
-
-                    <div>
-                        <h3>CARREGADOR DE JOY-CON E CONTROLE TIPO C</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/40YQkC3Owq" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$48,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/16vBmMY" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$53,00</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/gripfun.jpg" alt="gripfun">
-
-                    <div>
-                        <h3>GRIP PERSONALIZADO NINTENDO SWITCH 2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/Lf8OFoIKL" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$39,92</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1SSabwv" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$40,63</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/gripcolantens1.jpg" alt="gripcolantens1">
-
-                    <div>
-                        <h3>GRIP VOLANTE NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/BLiBwovfK" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$48,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2RGkGY9" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$48,62</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/bandages1.jpg" alt="bandages1">
-
-                    <div>
-                        <h3>BANDAGEM JOY-CON NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/12HzdpZ0J" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$63,49</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/26htrfn" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$65,01</a></div>
-                </div>
-
-                <div class="afiliado">
-                    <img src="image/kit10acessorios.jpg" alt="kit10acessorios">
-
-                    <div>
-                        <h3>KIT 10 ACESSÓRIOS ESPORTIVOS NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2VjcyEg2vo" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$155,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/121xoqL" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$178,00</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/kit18acessorios.jpg" alt="kit18acessorios">
-
-                    <div>
-                        <h3>KIT 18 ACESSÓRIOS ESPORTIVOS NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/70C2LNKhVn" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$328,49</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2JtmonX" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$364,61</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/portajoyconns1.jpg" alt="kit10acessorios">
-
-                    <div>
-                        <h3>PORTA JOY-CON NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/8pdgWkDinA" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$26,90</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/flipgripns1.jpg" alt="flipgripns1">
-
-                    <div>
-                        <h3>FLIP GRIP VERTICAL NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/8fKGKREM89" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$68,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/26oGnmT" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$79,78</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/carregadock-multns1.jpg" alt="carregadock-multns1">
-
-                    <div>
-                        <h3>CARREGOR DOCK NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/9AGWvMCS7G" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$63,49</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1xs46TB" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$69,32</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/dockmarions1.jpg" alt="dockmarions1">
-
-                    <div>
-                        <h3>PORTA DOCK DECORATIVA MARIO NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2B6mbFtNkE" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$69,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1A7W99r" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$78,88</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/suporte-card.jpg" alt="suporte-card">
-
-                    <div>
-                        <h3>CASE PORTA CARTUCHO NITENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/20nMOwu15D" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$85,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/2FionY9" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$121,00</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/multfunc-carrega-portafitas.jpg" alt="multfunc-carrega-portafitas">
-
-                    <div>
-                        <h3>CARREGADOR E ORGANIZADOR NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/VyYcBzj7w" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$110,49</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1oyCB8F" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$98,60</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/portajogosns.jpg" alt="portajogosns">
-
-                    <div>
-                        <h3>ORGANIZADOR DE JOGOS NINTENDO SWITCH 1/2</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/3fvaOeXVuF" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$37,99</a>
-                    </div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/estojopokedex.jpg" alt="estojopokedex">
-
-                    <div>
-                        <h3>ESTOJO POKEDEX PARA JOGOS NINTENDO SWITCH</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/20nMPxmANx" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$52,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1mVnJqV" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$63,55</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/portacartuchos.jpg" alt="portacartuchos">
-
-                    <div>
-                        <h3>MINI CAIXA PARA JOGOS NINTENDO SWITCH</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2Vjd0skGN4" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$22,00</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/dockportatilns1.jpg" alt="dockportatilns1">
-
-                    <div>
-                        <h3>DOCK PORTÁTIL NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/2LQCoZkti3" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$59,00</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1tWv69W" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$77,90</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/suporteparedens1.jpg" alt="suporteparedens1">
-
-                    <div>
-                        <h3>SUPORTE PARA PAREDE NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/BLiEat96e" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$31,92</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1Vb6aTh" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$28,08</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/portaretrato.jpg" alt="portaretrato">
-
-                    <div>
-                        <h3>MOLDURA JOGOS SWITCH</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/12I2HtmRd" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$27,99</a></div>
-                </div>
-                <div class="afiliado">
-                    <img src="image/caixajogosns1.jpg" alt="caixajogosns1">
-
-                    <div>
-                        <h3>CAIXA VAZIA ACRÍLICA NINTENDO SWITCH 1</h3>
-                    </div>
-
-                    <div class="shopee"><a href="https://s.shopee.com.br/7pl9QzJELN" target="_blank" rel="external"><img
-                                src="icon/shopee-btn.png" alt="shopee-icon"> R$30,90</a></div>
-
-                    <div class="mercado-livre"><a href="https://mercadolivre.com/sec/1LJG6KK" target="_blank"
-                            rel="external"><img src="icon/mercado-livre-btn.png" alt="">R$30,70</a></div>
-                </div>
-                
-            </section>
 
         </div>
+
+        <a href="https://whatsapp.com/channel/0029VbAeEPoATRSfjcyrEq0b" class="btn-whatsapp-flutuante" target="_blank">
+            <img src="icon/whatsapp.jpg" alt="Fale conosco no WhatsApp">
+        </a>
 
         <footer>
             <p>Site desenvolvido por <a
@@ -847,6 +638,7 @@
                     target="_blank">Chrystopher Gonçalves</a> para a comunidade de <a
                     href="https://www.youtube.com/@bigodeimes" target="_blank">Bigodeimes</a>!</p>
         </footer>
+        <script src="scripts.js"></script>
     </main>
 
 </body>
