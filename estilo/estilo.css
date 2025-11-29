@@ -157,8 +157,8 @@ img.icon {
 h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-left: 2.5vw;
-  font-size: 3em;
   padding: 5px;
+  font-size: 2em;
   font-weight: bolder;
   text-align: center;
   text-shadow: 2px 2px 15px black;
@@ -302,13 +302,12 @@ h2 {
 
 #grade-afiliado {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px 0px;
 
   .afiliado {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
     padding: 10px;
     border-radius: 10px;
     width: 45vw;
@@ -523,7 +522,8 @@ footer {
   h2 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: bolder;
-    width: 300px;
+    font-size: 2em;
+    width: 200px;
     -webkit-text-stroke: 0.5px black;
   }
 
@@ -652,6 +652,10 @@ footer {
 
     /* FILTRO QUERY */
 
+    #conteudo-principal {
+        /* Muda para uma única coluna: Filtros e depois Grade de Produtos */
+        grid-template-columns: 1fr; 
+    }
     #painel-filtros {
         border-right: none;
         padding: 10px;
