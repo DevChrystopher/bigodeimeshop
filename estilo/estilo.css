@@ -157,11 +157,12 @@ img.icon {
 h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-left: 2.5vw;
+  font-size: 3em;
   padding: 5px;
   font-weight: bolder;
   text-align: center;
   text-shadow: 2px 2px 15px black;
-  width: 30%;
+  width: 60%;
   color: white;
   border-radius: 12px;
   background-image: linear-gradient(to bottom, #a5a398, white);
@@ -522,8 +523,7 @@ footer {
   h2 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: bolder;
-    font-size: 3em;
-    width: 200px;
+    width: 300px;
     -webkit-text-stroke: 0.5px black;
   }
 
