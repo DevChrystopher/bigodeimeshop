@@ -671,5 +671,12 @@ footer {
     .grupo-tags{
       display: flex;
       flex-flow: row wrap;
+
+      label {
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        margin-right: 15px;
+      }
     }
 }
