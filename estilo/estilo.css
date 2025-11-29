@@ -667,4 +667,9 @@ footer {
         box-shadow: none;
         padding: 0;
     }
+
+    .grupo-tags{
+      display: flex;
+      flex-flow: row wrap;
+    }
 }
