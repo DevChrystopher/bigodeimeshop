@@ -138,6 +138,7 @@ img.icon {
 
 h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 2.5vw;;
   margin-left: 2.5vw;
   padding: 5px;
   font-size: 2em;
@@ -149,7 +150,7 @@ h2 {
   border-radius: 12px;
   background-image: linear-gradient(to bottom, #a5a398, white);
   box-shadow: 2px 2px 15px black;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: 1px black;
   scroll-margin-top: 17vh;
 }
 
