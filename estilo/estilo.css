@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* RESETE GERAL */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -13,10 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-#principal {
-  display: flex;
-  flex-direction: column;
-}
+/* CABEÇALHO DO SITE E NAVEGAÇÃO */
 
 #topo {
   background-image: linear-gradient(to bottom, rgb(75, 59, 59), white);
@@ -59,37 +58,25 @@ img.icon {
   }
 }
 
+#principal {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
 #carrossel {
   margin: auto;
   margin-top: 140px;
-}
 
-.banner {
+  .banner {
   width: 70vw;
   border-radius: 10px;
   box-shadow: 2px 2px 15px black;
-}
-
-#indice {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 50px 0px 20px 0px;
-  max-width: 95vw;
-
-  .item-indice {
-    margin: 0px 15px;
-    a {
-      color: black;
-      font-weight: bold;
-
-      &:hover {
-        color: yellow;
-      }
-    }
   }
+  
 }
+
 
 /* FILTRO INICIO */
 
@@ -97,7 +84,7 @@ img.icon {
     display: grid;
     /* Define o layout: 250px para filtros e o restante (1fr) para a grade de produtos */
     grid-template-columns: 250px 1fr; 
-    gap: 30px; /* Espaço entre a barra lateral e a vitrine */
+    gap: 20px; /* Espaço entre a barra lateral e a vitrine */
     margin-top: 30px;
     grid-column: 2 / 3; /* Garante que fique na coluna central do grid pai (#principal) */
 }
@@ -125,11 +112,6 @@ img.icon {
 
 .grupo-tags input[type="checkbox"] {
     margin-right: 10px;
-}
-
-.grupo-tags .count {
-    font-size: 0.9em;
-    color: #777;
 }
 
 .grupo-precos button {
@@ -309,6 +291,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    gap: 5px;
     border-radius: 10px;
     width: 45vw;
     height: 100%;
@@ -376,7 +359,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 5vw;
+        font-size: 3vw;
         font-weight: bold;
         color: red;
         text-decoration: none;
@@ -400,7 +383,7 @@ h2 {
 
       a {
         font-weight: bold;
-        font-size: 5vw;
+        font-size: 3vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -498,7 +481,38 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 510px) {
+    #grade-afiliado {
+      .afiliado {
+        width: 30vw;
+      }
+    }  
+}
+
+@media screen and (min-width: 600px) {
+    #grade-afiliado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    gap: 10px 0px;
+
+    .afiliado {
+      width: 27vw;
+      height: 100%;
+    }
+}
+}
+
+@media screen and (min-width: 930px) {
+    #grade-afiliado {
+    
+    .afiliado {
+      max-width: 160px;
+      height: 100%;
+    }
+}
+}
+
+@media screen and (min-width: 765px) {
   #topo {
     max-height: 15vh;
   }
@@ -554,13 +568,7 @@ footer {
         margin-bottom: 6px;
       }
 
-      .shopee {
-        a {
-          font-size: 1em;
-        }
-      }
-
-      .mercado-livre {
+      .mercado-livre, .shopee {
         a {
           font-size: 1em;
         }
@@ -571,28 +579,18 @@ footer {
   section#grade-afiliado {
     flex-flow: row wrap;
     margin-top: 10px;
+  
 
     div.afiliado {
-      max-width: 200px;
-      height: 360px;
-
-      a.ver-mais {
-        font-size: 0.8em;
-      }
+      width: 21vw;
 
       h3 {
         font-size: 1em;
-        height: 3em;
+        height: 6em;
         margin-bottom: 6px;
       }
 
-      .shopee {
-        a {
-          font-size: 1em;
-        }
-      }
-
-      .mercado-livre {
+      .mercado-livre, .shopee {
         a {
           font-size: 1em;
         }
