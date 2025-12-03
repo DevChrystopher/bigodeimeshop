@@ -184,6 +184,8 @@ h2 {
   }
 
   .noticia-capa {
+    margin: 8px;
+    float: left;
     width: 25%;
     border-radius: 8px;
   }
