@@ -77,6 +77,10 @@ img.icon {
   border-radius: 10px;
   box-shadow: 2px 2px 15px black;
   }
+
+  p {
+    text-align: center;
+  }
   
 }
 
@@ -298,6 +302,33 @@ footer {
   }
 }
 
+#setup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2%;
+
+  h2 {   
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  a{font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+  img {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 510px) {
     #grade-afiliado {
       .afiliado {
@@ -305,23 +336,6 @@ footer {
       }
     }
     
-    #grade-noticia {
-
-      display: flex;
-      gap: 20px;
-      flex-flow: row;
-
-  .noticia-card {
-    width: 40vw;
-  }
-
-   .noticia-capa {
-    width: 100px;
-
-  }
-
-
-}
 }
 
 @media screen and (min-width: 600px) {
