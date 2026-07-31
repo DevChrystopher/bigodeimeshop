@@ -19,7 +19,7 @@ body {
 /* CABEÇALHO DO SITE E NAVEGAÇÃO */
 
 #topo {
-  background-image: linear-gradient(to bottom, rgb(75, 59, 59), white);
+  background-color: rgb(31, 28, 28);
   position: fixed;
   padding: 10px;
   width: 100vw;
@@ -38,24 +38,12 @@ ul {
 
   a {
     text-decoration: none;
-
+    font: bolder 20pt Arial;
     color: white;
-    text-shadow: 2px 2px 5px black;
-  }
-}
 
-img.icon {
-  background-color: white;
-  border-radius: 50%;
-  width: 12vw;
-  aspect-ratio: 1/1;
-  border: 5px solid rgb(75, 59, 59);
-  outline: 5px solid white;
-  box-shadow: 2px 2px 15px black;
-
-  &:hover {
-    border: 5px solid white;
-    outline: 5px solid black;
+    &:hover{
+      color: yellow;
+    }
   }
 }
 
@@ -67,23 +55,6 @@ img.icon {
 
   
 }
-
-#carrossel {
-  margin: auto;
-  margin-top: 140px;
-
-  .banner {
-  width: 70vw;
-  border-radius: 10px;
-  box-shadow: 2px 2px 15px black;
-  }
-
-  p {
-    text-align: center;
-  }
-  
-}
-
 
 /* FILTRO INICIO */
 
@@ -286,7 +257,7 @@ footer {
 
   ul {
     justify-content: space-around;
-
+    
     list-style: none;
 
     img {

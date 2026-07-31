@@ -1,3 +1,9 @@
+fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Variáveis Globais (usadas por todas as funções)
     const filtrosContainer = document.getElementById('painel-filtros');
@@ -146,3 +152,4 @@ botoesPreco.forEach(botao => {
     // Inicia a aplicação dos filtros ao carregar a página (mostra todos por padrão)
     aplicarFiltros(); 
 });
+
