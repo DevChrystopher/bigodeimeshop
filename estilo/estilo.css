@@ -66,6 +66,10 @@ ul {
     grid-column: 2 / 3; 
 }
 
+.busca-container {
+  padding-top: 5vw;
+}
+
 #painel-filtros {
     padding: 15px;
     border-right: 1px solid #ddd; /* Linha divisória suave */
@@ -429,6 +433,10 @@ footer {
 
 
 @media (max-width: 600px) {
+        .busca-container {
+      padding-top: 8vw;
+    }
+
     .btn-whatsapp-flutuante {
         width: 50px;
         height: 50px;
